@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HM/mBEcCtRejWByIgJIxjsE32rY8A3qXnjwj+8XJ7YdTI0vnXSkOqsHe5kZBAftYfF4U0UbXxV4J6RTftk6Jmg==",
+  "dgSpecHash": "q+76pGF40h4/Wf4YNEJ6BO0Xgjsp/RNQSbOnl4o8vE0GsVSdISmv5VtPdsRetykTuJIAT0v9VIBMmi7rPA2cRA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rob.owen\\source\\repos\\AccreditDemo\\AccreditDemoUI\\AccreditDemoAPI\\AccreditDemoAPI.csproj",
+  "projectFilePath": "C:\\Dev\\AccreditDemoUI\\AccreditDemoAPI\\AccreditDemoAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rob.owen\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\rob.owen\\.nuget\\packages\\microsoft.extensions.configuration\\3.0.0\\microsoft.extensions.configuration.3.0.0.nupkg.sha512",

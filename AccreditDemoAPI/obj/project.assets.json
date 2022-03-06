@@ -3799,11 +3799,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rob.owen\\source\\repos\\AccreditDemo\\AccreditDemoUI\\AccreditDemoAPI\\AccreditDemoAPI.csproj",
+      "projectUniqueName": "C:\\Dev\\AccreditDemoUI\\AccreditDemoAPI\\AccreditDemoAPI.csproj",
       "projectName": "AccreditDemoAPI",
-      "projectPath": "C:\\Users\\rob.owen\\source\\repos\\AccreditDemo\\AccreditDemoUI\\AccreditDemoAPI\\AccreditDemoAPI.csproj",
+      "projectPath": "C:\\Dev\\AccreditDemoUI\\AccreditDemoAPI\\AccreditDemoAPI.csproj",
       "packagesPath": "C:\\Users\\rob.owen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rob.owen\\source\\repos\\AccreditDemo\\AccreditDemoUI\\AccreditDemoAPI\\obj\\",
+      "outputPath": "C:\\Dev\\AccreditDemoUI\\AccreditDemoAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
