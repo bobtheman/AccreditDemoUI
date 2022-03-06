@@ -7,6 +7,8 @@ A Peronsal GitHub access token is requried
 
 To generate an access token visit https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 
+Under select scopes tick repo and save
+
 Set the generated access token in appsettings.Development.json under GitHub -> Token
 
 Run both the AccreditDemoAPI and AccreditDemoUI project
