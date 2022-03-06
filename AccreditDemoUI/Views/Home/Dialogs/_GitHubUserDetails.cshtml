@@ -1,0 +1,77 @@
+﻿@model AccreditDemoUI.RequestResponses.GitHubUserDetailsReponse
+@using AccreditDemoUI.Helpers;
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    @if (Model.GitHubUserDetails != null && Model.GitHubUserDetails.Id != 0)
+                    {
+                        @Html.HiddenFor(m => m.GitHubUserDetails.Id, new { id = "hfId", @name = "hfId" })
+                        <div class="card-title mb-4">
+                            <div class="d-flex justify-content-start">
+                                <div class="image-container">
+                                    <img src="data:image/jpeg;base64,@Convert.ToBase64String(@Model.GitHubAvatarDetails.profileImageByte)" alt="@Model.GitHubUserDetails.Login" id="imgProfile" style="width: 150px; height: 150px" class="img-thumbnail" />
+                                </div>
+                                <div class="userData ml-3">
+                                    <h2 class="d-block" style="font-size: 1.5rem; font-weight: bold">@Model.GitHubUserDetails.Login</h2>
+                                    <h6 class="d-block">@Model.GitHubUserDetails.Location</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="reopInfo-tab" data-toggle="tab" href="#reopInfo" role="tab" aria-controls="reopInfo" aria-selected="true">Repo Details</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content ml-1" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="reopInfo" role="tabpanel" aria-labelledby="reopInfo-tab">
+                                        <div class="row" id="projectdetailsholder">
+                                            <div class="col-sm-4 col-md-3 col-6">
+                                                <span class="projectName">Project Name</span>
+                                            </div>
+                                            <div class="col-md-8 col-6">
+                                                <span class="projectName">Project Description</span>
+                                            </div>
+                                        </div>
+                                        @foreach (var item in Model.GitHubstargazersCountList.GitHubstargazersDetails)
+                                        {
+                                            <div class="row">
+                                                <div class="col-sm-4 col-md-3 col-6">
+                                                    @Html.RouteLink(@item.RepoName, new { }, new { href = @item.RepoUrl, target = "_blank" })
+                                                </div>
+                                                <div class="col-md-8 col-6">
+                                                    @item.Description
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-4 col-md-3 col-6">
+                                                    <label></label>
+                                                </div>
+                                                <div class="col-md-8 col-6">
+                                                    Stargazers Count: @item.StargazerCount
+                                                </div>
+                                            </div>
+                                        }
+                                    </div>
+                                        </div>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="card-title mb-4">
+                            <div>
+                                <p>User profile not found, please check username and try again</p>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
