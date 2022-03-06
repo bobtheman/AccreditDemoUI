@@ -26,7 +26,6 @@ namespace AccreditDemoUI.Controllers
             _gitHubService = gitHubService;
         }
 
-        //[ValidateAntiForgeryToken]
         public ActionResult GetGutHubDetails(GitHubRequest gitHubRequest)
         {
             //logger.Info("Invoking action " + MethodName.GetCallerName());
